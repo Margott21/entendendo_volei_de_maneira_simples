@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras no Vôlei!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Mágico -->
+    <header class="topo-pagina">
+        <h1>🏐 Explicando Volêi para Leigos! 🌟</h1>
+        <p>Venha aprender e brincar com a gente!</p>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <!-- Seção 1: O que é -->
+        <section class="cartao intro">
+            <h2>O que é o Vôlei? 🎈</h2>
+            <p>Imagine um jogo muito divertido em que duas equipes jogam uma bola de um lado para o outro por cima de uma rede bem alta, <strong>sem deixar a bola cair no chão!</strong></p>
+        </section>
+
+        <!-- Seção 2: Como Funciona (Regras para Pequenos) -->
+        <section class="cartao regras">
+            <h2>Como a gente joga? 🎮</h2>
+            <div class="grade-regras">
+                <div class="item-regra">
+                    <span class="emoji-regra">👥</span>
+                    <h3>Os Times</h3>
+                    <p>6 amigos de cada lado ajudando uns aos outros!</p>
+                </div>
+                <div class="item-regra">
+                    <span class="emoji-regra">☘️</span>
+                    <h3>Três Toques</h3>
+                    <p>O time pode tocar na bola 3 vezes antes de mandar para o lado do amigo/adversário.</p>
+                </div>
+                <div class="item-regra">
+                    <span class="emoji-regra">🛑</span>
+                    <h3>Sem Segurar</h3>
+                    <p>A bola não pode parar! É só dar tapinhas nela com carinho.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Movimentos (Interativa) -->
+        <section class="cartao movimentos">
+            <h2>Toque nos super poderes do Vôlei! 👇</h2>
+            <p class="instrucao-clique">Clique em cada botão para descobrir como funciona:</p>
+            
+            <div class="botoes-movimentos">
+                <button class="btn-movimento" data-alvo="saque">🚀 Saque</button>
+                <button class="btn-movimento" data-alvo="manchete">💪 Manchete</button>
+                <button class="btn-movimento" data-alvo="toque">✨ Toque</button>
+                <button class="btn-movimento" data-alvo="cortada">⚡ Cortada</button>
+                <button class="btn-movimento" data-alvo="bloqueio">🧱 Bloqueio</button>
+            </div>
+
+            <!-- Caixa que revela a explicação mágica -->
+            <div id="painel-explicacao" class="painel-oculto">
+                <h3 id="titulo-movimento">Escolha um botão acima!</h3>
+                <p id="texto-movimento">Clique em um dos botões para ver a mágica acontecer.</p>
+            </div>
+        </section>
+
+        <!-- Seção 4: Curiosidade -->
+        <section class="cartao curiosidade">
+            <h2>💡 Super Dica!</h2>
+            <p>No vôlei, <strong>ninguém vence sozinho</strong>! Um depende do outro para a brincadeira dar certo.</p>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Divirta-se jogando vôlei com responsabilidade e alegria! ❤️</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

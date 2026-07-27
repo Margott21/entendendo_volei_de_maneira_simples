@@ -1,0 +1,178 @@
+/* Configuração Geral e Cores Alegres */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #e0f7fa; /* Azulzinho bem claro de céu */
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.topo-pagina {
+    background: linear-gradient(135deg, #ff8a80, #ffd54f);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.topo-pagina h1 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.topo-pagina p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal e Cartões */
+.conteudo-principal {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    border: 4px solid #b2ebf2;
+}
+
+.cartao h2 {
+    color: #ff6f00;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.cartao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Grid de Regras para Crianças */
+.grade-regras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.item-regra {
+    background: #fff9c4;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px dashed #fbc02d;
+}
+
+.emoji-regra {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item-regra h3 {
+    font-size: 1.1rem;
+    color: #f57f17;
+    margin-bottom: 5px;
+}
+
+.item-regra p {
+    font-size: 0.95rem;
+}
+
+/* Botões Interativos */
+.instrucao-clique {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #00838f;
+}
+
+.botoes-movimentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-movimento {
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-movimento:hover {
+    background-color: #0288d1;
+    transform: scale(1.08);
+}
+
+/* Painel de Exibição Dinâmica */
+.painel-oculto {
+    background: #f3e5f5;
+    border: 3px solid #ab47bc;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: aparecer 0.4s ease-in-out;
+}
+
+.painel-oculto h3 {
+    color: #7b1fa2;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.painel-oculto p {
+    color: #4a148c;
+    font-size: 1.1rem;
+}
+
+/* Curiosidade */
+.curiosidade {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+}
+
+.curiosidade h2 {
+    color: #2e7d32;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    margin-top: 30px;
+    color: #006064;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
