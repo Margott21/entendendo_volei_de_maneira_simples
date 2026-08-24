@@ -44,3 +44,50 @@ botoes.forEach(botao => {
         }, 150);
     });
 });
+
+const tl = gsap.timeline({ defaults: { ease: "power2.out", duration: 0.6 } });
+
+tl.from(".form-container", {
+  y: 50,
+  opacity: 0,
+  duration: 0.8
+});
+
+tl.from("h2", {
+  y: -20,
+  opacity: 0
+}, "-=0.3"); 
+
+tl.from(".input-group", {
+  x: -30,
+  opacity: 0,
+  stagger: 0.2 
+}, "-=0.2");
+
+tl.from(".btn-login", {
+  scale: 0.8,
+  opacity: 0,
+  ease: "back.out(1.7)" 
+}, "-=0.1");
+
+
+// No JavaScript (adicione no início da timeline)
+const tl = gsap.timeline({ defaults: { ease: "power2.out", duration: 0.6 } });
+
+// Força o container a ficar visível antes de começar a animar
+tl.set(".form-container", { visibility: "visible" }); 
+
+tl.from(".form-container", { y: 50, opacity: 0, duration: 0.8 });
+tl.from("h2", { y: -20, opacity: 0 }, "-=0.3");
+tl.from(".input-group", { x: -30, opacity: 0, stagger: 0.2 }, "-=0.2");
+tl.from(".btn-login", { scale: 0.8, opacity: 0, ease: "back.out(1.7)" }, "-=0.1");
+
+
+gsap.to(".caixa", { scale: 1.5, duration: 1});
+
+gsap.to(".caixa", {
+width: "300",
+height: "200",
+duration: 1
+});
+
